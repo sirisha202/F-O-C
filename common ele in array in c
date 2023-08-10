@@ -1,0 +1,19 @@
+#include <stdio.h>
+int printcommon(int a[],int b[],int l1,int l2){
+    int i,j;
+    for (i=0;i<l1;i++){
+    for (j=0;j<l2;j++){
+            if (a[i]==b[j]){
+                printf("common elements are %d",a[i]);
+            }
+        }
+    }
+}
+int main(){
+    int a[]={1,2,3,4,5};
+    int b[]={2,6,8,3,9};
+    int l1=5;
+    int l2=5;
+    printcommon(a,b,l1,l2);
+    return 0;
+}
