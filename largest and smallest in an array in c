@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+  int n,small,num[n],big,i;
+  printf("enter a number\n");
+  scanf("%d",&n);
+  printf("enter a number\n");
+  for (i=0;i<n;i++){
+      scanf("%d",&num[i]);
+  }
+  big=small=num[0];
+  for (i=0;i<n;i++){
+      if(num[i]>big){
+          big=num[i];
+      }
+  }
+  for (i=0;i<n;i++){
+      if (num[i]<small){
+          small=num[i];
+      }
+  }
+  printf("largest difference is %d",big-small);
+  return 0;
+}
