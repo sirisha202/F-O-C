@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+    char a[60];
+    int i,len;
+    printf("enter the string to be reversed  \n");
+    scanf("%s",&a);
+    len=strlen(a);
+    for(i=len;i>=0;i--){
+        printf("%c",a[i]);
+    }
+    return 0;
+}
