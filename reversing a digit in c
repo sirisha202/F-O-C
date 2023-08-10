@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+    int rev=0,rem=0,n,i;
+    printf("enter the value:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        rem=n%10;
+        rev=rev*10+rem;
+        n=n/10;
+    }
+    printf("reversed %d",rev);
+    return 0;
+}
