@@ -1,0 +1,9 @@
+$ n=7
+$ m=5
+
+$ for ((i=1, pow=n; i<m; i++)); do ((pow *= n)); done
+$ echo $pow
+16807
+
+$ echo "$n^$m" | bc  # just to verify the answer
+16807
